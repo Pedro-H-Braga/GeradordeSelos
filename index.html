@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulário - Cadastro e emissão de selo</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Emissor de Selos</h2>
+      </div>
+
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">Nome Completo</label>
+          <input
+            type="text"
+            id="nomecompleto"
+            placeholder="Digite seu nome de completo..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Digite seu email.." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password">Nº CNH:</label>
+          <input
+            type="number"
+            id="ncnh"
+            placeholder="Digite o nº da CNH..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+		
+        <div class="form-control">
+          <label for="cpfoucnpj">Categoria da CNH:</label>
+          <input
+            type="text"
+            id="catcnh"
+            placeholder="Digite a Categoria..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="cpfoucnpj">CPF ou CNPJ:</label>
+          <input
+            type="text"
+            id="cpfoucnpj"
+            placeholder="Digite o número solicitado..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+		
+        <div class="form-control">
+          <label for="password-confirmation">Validade:</label>
+          <input
+            type="date"
+            id="validade"
+            placeholder="Digite a Validade..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+		
+        <div class="form-control">
+          <label for="password-confirmation">CHASSI:</label>
+          <input
+            type="number"
+            id="chassi"
+            placeholder="Digite o número do CHASSI..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+		
+        <div class="form-control">
+          <label for="placa">Placa:</label>
+          <input
+            type="text"
+            id="placa"
+            placeholder="Digite o número da Placa..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+		
+        <div class="form-control">
+          <label for="password-confirmation">Modelo:</label>
+          <input
+            type="text"
+            id="modelo"
+            placeholder="Digite o Modelo do Veículo..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+		
+        <div class="form-control">
+          <label for="password-confirmation">Cor:</label>
+          <input
+            type="text"
+            id="cor"
+            placeholder="Digite a Cor do Veículo..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+		
+        <div class="form-control">
+          <label for="password-confirmation">Ano de Fabricação:</label>
+          <input
+            type="number"
+            id="fabricacao"
+            placeholder="Digite o ano de Fabricação..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+		
+        <div class="form-control">
+          <label for="password-confirmation">IPVA:</label>
+          <input
+            type="number"
+            id="ipva"
+            placeholder="Digite o número do IPVA..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+		
+        <div class="form-control">
+          <label for="password-confirmation">RENAVAM:</label>
+          <input
+            type="number"
+            id="renavam"
+            placeholder="Digite o número do RENAVAM..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+ 
+        <div class="wrapper">   
+          <header>
+            <h1>Clique abaixo para emitir o selo</h1>
+          </header>
+          <br>
+        <form action="processa_imagem_perfil.php" method="post" enctype="multipart/form-data">
+          
+          <label>Anexar Documentos: <input type="file" name="image[]" multiple="multiple"></label>
+    
+       </form>
+       
+       <div class="form">             
+        <button>Gerar selo</button>
+        <label> <input type="submit" name="" multiple="multiple"></label>
+      </div>        
+
+          <div class="qr-code">
+            <img src="" alt="qr-code">
+          </div>
+        </div>
+
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js"
+      crossorigin="anonymous"
+    >
+      
+    </script>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
