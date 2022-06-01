@@ -26,6 +26,7 @@
             type="text"
             id="nomecompleto"
             placeholder="Digite seu nome de completo..."
+            maxlength="161"
           />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
@@ -41,11 +42,12 @@
         </div>
 
         <div class="form-control">
-          <label for="password">Nº CNH:</label>
+          <label for="ncnh">Nº CNH:</label>
           <input
             type="number"
             id="ncnh"
             placeholder="Digite o nº da CNH..."
+            maxlength="10"
           />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
@@ -53,11 +55,12 @@
         </div>
 		
         <div class="form-control">
-          <label for="cpfoucnpj">Categoria da CNH:</label>
+          <label for="catcnh">Categoria da CNH:</label>
           <input
             type="text"
             id="catcnh"
             placeholder="Digite a Categoria..."
+            maxlength="3"
           />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
@@ -66,10 +69,12 @@
 
         <div class="form-control">
           <label for="cpfoucnpj">CPF ou CNPJ:</label>
+          <!--18 caracteres um CNPJ e 14 numericos-->
           <input
             type="text"
             id="cpfoucnpj"
             placeholder="Digite o número solicitado..."
+            maxlength="18"
           />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
@@ -77,7 +82,7 @@
         </div>
 		
         <div class="form-control">
-          <label for="password-confirmation">Validade:</label>
+          <label for="validade">Validade:</label>
           <input
             type="date"
             id="validade"
@@ -89,11 +94,12 @@
         </div>
 		
         <div class="form-control">
-          <label for="password-confirmation">CHASSI:</label>
+          <label for="chassi">CHASSI:</label>
           <input
             type="number"
             id="chassi"
             placeholder="Digite o número do CHASSI..."
+            maxlength="17"
           />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
@@ -106,6 +112,7 @@
             type="text"
             id="placa"
             placeholder="Digite o número da Placa..."
+            maxlength="7"
           />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
@@ -113,11 +120,12 @@
         </div>
 		
         <div class="form-control">
-          <label for="password-confirmation">Modelo:</label>
+          <label for="modelo">Modelo:</label>
           <input
             type="text"
             id="modelo"
             placeholder="Digite o Modelo do Veículo..."
+            maxlength="100"
           />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
@@ -125,11 +133,12 @@
         </div>
 		
         <div class="form-control">
-          <label for="password-confirmation">Cor:</label>
+          <label for="cor">Cor:</label>
           <input
             type="text"
             id="cor"
             placeholder="Digite a Cor do Veículo..."
+            maxlength="50"
           />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
@@ -137,11 +146,12 @@
         </div>
 		
         <div class="form-control">
-          <label for="password-confirmation">Ano de Fabricação:</label>
+          <label for="fabricacao">Ano de Fabricação:</label>
           <input
             type="number"
             id="fabricacao"
             placeholder="Digite o ano de Fabricação..."
+            maxlength="4"
           />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
@@ -149,11 +159,12 @@
         </div>
 		
         <div class="form-control">
-          <label for="password-confirmation">IPVA:</label>
+          <label for="ipva">IPVA:</label>          
           <input
             type="number"
             id="ipva"
             placeholder="Digite o número do IPVA..."
+            maxlength="11"
           />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
@@ -161,11 +172,12 @@
         </div>
 		
         <div class="form-control">
-          <label for="password-confirmation">RENAVAM:</label>
+          <label for="renavam">RENAVAM:</label>
           <input
             type="number"
             id="renavam"
             placeholder="Digite o número do RENAVAM..."
+            maxlength="11"
           />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
@@ -185,7 +197,7 @@
        
        <div class="form">             
         <button>Gerar selo</button>
-        <label> <input type="submit" name="" multiple="multiple"></label>
+        <form action=""></form>
       </div>        
 
           <div class="qr-code">
